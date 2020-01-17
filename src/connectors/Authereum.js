@@ -14,8 +14,6 @@ export class AuthereumConnector extends AbstractConnector {
 
   async activate() {
     if (!this.authereum) {
-      const networkName = chainIdToNetwork[this.chainId]
-      console.log(networkName)
       this.authereum = new Authereum(chainIdToNetwork[this.chainId])
     }
 
