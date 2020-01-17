@@ -576,6 +576,50 @@ const INITIAL_TOKENS_CONTEXT = {
       [DECIMALS]: 18,
       [EXCHANGE_ADDRESS]: '0xaF51BaAA766b65E8B3Ee0C2c33186325ED01eBD5'
     }
+  },
+  42: {
+    '0xac94ea989f6955c67200dd67f0101e1865a560ea': {
+      [NAME]: 'Maker',
+      [SYMBOL]: 'MKR',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0xc64f00b099649d578bf289894d3a51ee7d0b04e5'
+    },
+    '0x7d669A64deb8a4A51eEa755bb0E19FD39CE25Ae9': {
+      [NAME]: 'Dai Stablecoin',
+      [SYMBOL]: 'DAI',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0xC9883D347C200d9CBA014389220C4df45648F03a'
+    },
+    '0x02f96ef85cad6639500ca1cc8356f0b5ca5bf1d2': {
+      [NAME]: 'Basic Attention Token',
+      [SYMBOL]: 'BAT',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0x2f177704b7ceb1fa56c8956479f321b56ad9e3b4'
+    },
+    // '0x3fa9fcd9456991fe1220d1bb77a5863695c01c05': {
+    //   [NAME]: 'Omise Go',
+    //   [SYMBOL]: 'OMG',
+    //   [DECIMALS]: 18,
+    //   [EXCHANGE_ADDRESS]: '0x2f177704b7ceb1fa56c8956479f321b56ad9e3b4'
+    // },
+    // '0x4c7493b70f16bec1e087bf74a31d095f9b8f9c40': {
+    //   [NAME]: 'Reputation',
+    //   [SYMBOL]: 'REP',
+    //   [DECIMALS]: 18,
+    //   [EXCHANGE_ADDRESS]: '0x4ca9baaffcc2692db2b33ab2ab2edda86c2c4a4d'
+    // },
+    '0xf8720eb6ad4a530cccb696043a0d10831e2ff60e': {
+      [NAME]: 'Civic',
+      [SYMBOL]: 'CVC',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0x0ca5508612ca567dcb9caf02abc7f894fd4b7d82'
+    },
+    '0x4bb57bc8485ec4c4112aa25da4e746f373ad540e': {
+      [NAME]: 'Golem Network Token',
+      [SYMBOL]: 'GNT',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0x7ca1bec492374463705103dda25cb1c41dcf8caa'
+    }
   }
 }
 

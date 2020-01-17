@@ -30,12 +30,12 @@ export const walletconnect = new WalletConnectConnector({
 
 export const fortmatic = new FortmaticConnector({
   apiKey: process.env.REACT_APP_FORTMATIC_KEY,
-  chainId: 1
+  chainId: 42
 })
 
 export const portis = new PortisConnector({
   dAppId: process.env.REACT_APP_PORTIS_ID,
-  networks: [1]
+  networks: [42]
 })
 
 export const walletlink = new WalletLinkConnector({
@@ -46,5 +46,5 @@ export const walletlink = new WalletLinkConnector({
 })
 
 export const authereum = new AuthereumConnector({
-  chainId: 1
+  chainId: 42
 })
