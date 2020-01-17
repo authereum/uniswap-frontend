@@ -5,9 +5,7 @@ const chainIdToNetwork = {
   42: 'kovan'
 }
 
-
 export class AuthereumConnector extends AbstractConnector {
-
   constructor({ chainId }) {
     super({ supportedChainIds: [chainId] })
 
@@ -24,7 +22,7 @@ export class AuthereumConnector extends AbstractConnector {
     await this.authereum
       .getProvider()
       .enable()
-      .then((accounts) => accounts[0])
+      .then(accounts => accounts[0])
 
     return { provider: this.authereum.getProvider() }
   }
