@@ -21,6 +21,12 @@ export function useEagerConnect() {
 
   const [tried, setTried] = useState(false)
 
+  const asyncActivateWallet = async function activateWallet(wallet) {
+    activate(wallet.connector, undefined, true).catch(() => {
+      setTried(true)
+    })
+  }
+
   useEffect(() => {
     const walletPreferenceName = localStorage.getItem(WALLET_PREFERENCE_KEY)
     // If the user has a wallet preference, use that. Otherwise, check if injected is authorized.
@@ -34,9 +40,8 @@ export function useEagerConnect() {
         return true
       })
       if (wallet.shouldReconnect) {
-        activate(wallet.connector, undefined, true).catch(() => {
-          setTried(true)
-        })
+        asyncActivateWallet(wallet)
+        setTried(true)
         return
       }
     }

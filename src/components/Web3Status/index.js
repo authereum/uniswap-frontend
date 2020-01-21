@@ -6,7 +6,7 @@ import { darken, transparentize } from 'polished'
 import { Activity } from 'react-feather'
 
 import { shortenAddress } from '../../utils'
-import { useENSName } from '../../hooks'
+import { useENSName, useEagerConnect } from '../../hooks'
 import WalletModal from '../WalletModal'
 import { useAllTransactions } from '../../contexts/Transactions'
 import { useWalletModalToggle } from '../../contexts/Application'
@@ -18,7 +18,7 @@ import CoinbaseWalletIcon from '../../assets/images/coinbaseWalletIcon.svg'
 import FortmaticIcon from '../../assets/images/fortmaticIcon.png'
 import PortisIcon from '../../assets/images/portisIcon.png'
 import AuthereumIcon from '../../assets/images/authereum-logo.svg'
-import { NetworkContextName } from '../../constants'
+import { NetworkContextName, WALLET_PREFERENCE_KEY } from '../../constants'
 import Identicon from '../Identicon'
 
 const Web3StatusGeneric = styled.button`
@@ -122,6 +122,7 @@ const IconWrapper = styled.div`
 export default function Web3Status() {
   const { t } = useTranslation()
   const { active, account, connector, error } = useWeb3React()
+  const triedEager = useEagerConnect()
   const contextNetwork = useWeb3React(NetworkContextName)
 
   const ENSName = useENSName(account)
@@ -172,6 +173,8 @@ export default function Web3Status() {
   }
 
   function getWeb3Status() {
+    const userWalletPreference = localStorage.getItem(WALLET_PREFERENCE_KEY)
+
     if (account) {
       return (
         <Web3StatusConnected onClick={toggleWalletModal} pending={hasPendingTransactions}>
@@ -179,6 +182,12 @@ export default function Web3Status() {
           <Text>{ENSName || shortenAddress(account)}</Text>
           {getStatusIcon()}
         </Web3StatusConnected>
+      )
+    } else if (triedEager && !account && userWalletPreference) {
+      return (
+        <Web3StatusConnect onClick={toggleWalletModal} faded={!account}>
+          <Text>{t('Loading Wallet...')}</Text>
+        </Web3StatusConnect>
       )
     } else if (error) {
       return (

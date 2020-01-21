@@ -2693,7 +2693,24 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-authereum@0.0.4-beta.68, authereum@^0.0.4-beta.41:
+authereum@0.0.4-beta.73:
+  version "0.0.4-beta.73"
+  resolved "https://registry.yarnpkg.com/authereum/-/authereum-0.0.4-beta.73.tgz#d7102bb7c648475103567bbc9511510caea64737"
+  integrity sha512-AYxxt7XnmKdTbZvr3VwhfMn3ILSo6g1Uz6OlqplJp+RZJg8OpAxJVav8S5nUrbQfv5lMSnGDXOgkUw8dOM5LSQ==
+  dependencies:
+    bnc-notify "^0.2.1"
+    ethereum-private-key-to-address "0.0.3"
+    ethers "^4.0.36"
+    eventemitter3 "^4.0.0"
+    moment "^2.24.0"
+    penpal "^4.1.1"
+    pify "^4.0.1"
+    rollup-plugin-commonjs "^10.1.0"
+    store "^2.0.12"
+    web3-provider-engine "^15.0.4"
+    web3-utils "^1.2.1"
+
+authereum@^0.0.4-beta.41:
   version "0.0.4-beta.68"
   resolved "https://registry.yarnpkg.com/authereum/-/authereum-0.0.4-beta.68.tgz#dd704e0dde0153fe8c8f7d1ec60645c178018464"
   integrity sha512-C/mRXgGrGqdM5DfA0scPIe+84EV10KhLspCccxaCNLWIGzav0WsGIjd0u9A7Qj0npdsSC6UY1hDaLa/e899pqA==
