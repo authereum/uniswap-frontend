@@ -14,7 +14,11 @@ export class AuthereumConnector extends AbstractConnector {
 
   async activate() {
     if (!this.authereum) {
-      this.authereum = new Authereum(chainIdToNetwork[this.chainId])
+      const networkName = chainIdToNetwork[this.chainId]
+      this.authereum = new Authereum({
+        networkName,
+        rpcUri: `https://${networkName || 'mainnet'}.infura.io/v3/ee2b4b709d034d9fa013191d78ce86ff`
+      })
     }
 
     await this.authereum
