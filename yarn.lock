@@ -2683,6 +2683,11 @@ async@^2.0.1, async@^2.1.2, async@^2.4.0, async@^2.5.0, async@^2.6.1, async@^2.6
   dependencies:
     lodash "^4.17.14"
 
+async@^3.1.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.1.1.tgz#dd3542db03de837979c9ebbca64ca01b06dc98df"
+  integrity sha512-X5Dj8hK1pJNC2Wzo2Rcp9FBVdJMGRR/S7V+lH46s8GVFhtbo5O4Le5GECCF/8PISVdkUA6mMPvgz7qTTD1rf1g==
+
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
@@ -2693,15 +2698,17 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-authereum@0.0.4-beta.73:
-  version "0.0.4-beta.73"
-  resolved "https://registry.yarnpkg.com/authereum/-/authereum-0.0.4-beta.73.tgz#d7102bb7c648475103567bbc9511510caea64737"
-  integrity sha512-AYxxt7XnmKdTbZvr3VwhfMn3ILSo6g1Uz6OlqplJp+RZJg8OpAxJVav8S5nUrbQfv5lMSnGDXOgkUw8dOM5LSQ==
+authereum@0.0.4-beta.79:
+  version "0.0.4-beta.79"
+  resolved "https://registry.yarnpkg.com/authereum/-/authereum-0.0.4-beta.79.tgz#dcb07c06adbe61f2130283c0339c90a373fba1ea"
+  integrity sha512-8SCjmruObsFiUorahmyhDOnsZufNaCnWCeTZ2XoEWs/0E2j3ye4MC3NhymufPFnZGGjPSzQc4hphGaetS82E9Q==
   dependencies:
+    async "^3.1.0"
     bnc-notify "^0.2.1"
     ethereum-private-key-to-address "0.0.3"
     ethers "^4.0.36"
     eventemitter3 "^4.0.0"
+    is-buffer "^2.0.4"
     moment "^2.24.0"
     penpal "^4.1.1"
     pify "^4.0.1"
@@ -8199,7 +8206,7 @@ is-buffer@^1.0.2, is-buffer@^1.1.5:
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
 
-is-buffer@^2.0.2:
+is-buffer@^2.0.2, is-buffer@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.4.tgz#3e572f23c8411a5cfd9557c849e3665e0b290623"
   integrity sha512-Kq1rokWXOPXWuaMAqZiJW4XxsmD9zGx9q4aePabbn3qCRGedtH7Cm+zV8WETitMfu1wdh+Rvd6w5egwSngUX2A==
