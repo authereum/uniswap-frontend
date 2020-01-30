@@ -2698,10 +2698,10 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-authereum@0.0.4-beta.79:
-  version "0.0.4-beta.79"
-  resolved "https://registry.yarnpkg.com/authereum/-/authereum-0.0.4-beta.79.tgz#dcb07c06adbe61f2130283c0339c90a373fba1ea"
-  integrity sha512-8SCjmruObsFiUorahmyhDOnsZufNaCnWCeTZ2XoEWs/0E2j3ye4MC3NhymufPFnZGGjPSzQc4hphGaetS82E9Q==
+authereum@0.0.4-beta.81:
+  version "0.0.4-beta.81"
+  resolved "https://registry.yarnpkg.com/authereum/-/authereum-0.0.4-beta.81.tgz#26a9963d1897b24dc423fa3e4e64a5a47dcfef99"
+  integrity sha512-KJEoopi5wZPZxZ2bcJ+NKX+iF63bwDwDmCLY7FQMJboVHi+/Nz7f5NL0UjpY+bbJMMGFlUzxmAmi0752PG3f3g==
   dependencies:
     async "^3.1.0"
     bnc-notify "^0.2.1"
