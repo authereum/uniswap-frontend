@@ -304,7 +304,7 @@ export default function AccountDetails({
             <img src={AuthereumIcon} alt={''} /> {formatConnectorName()}
             <MainWalletAction
               onClick={() => {
-                window.open('https://kovan.authereum.com/logi')
+                window.open('https://kovan.authereum.com/login')
               }}
             >
               show Authereum
