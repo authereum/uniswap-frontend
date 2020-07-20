@@ -62,7 +62,7 @@ export function useEagerConnect() {
         }
       }
     })
-  }, [activate]) // intentionally only running on mount (make sure it's only mounted once :))
+  }, [activate, asyncActivateWallet]) // intentionally only running on mount (make sure it's only mounted once :))
 
   // if the connection worked, wait until we get confirmation of that to flip the flag
   useEffect(() => {
