@@ -304,7 +304,7 @@ export default function AccountDetails({
             <img src={AuthereumIcon} alt={''} /> {formatConnectorName()}
             <MainWalletAction
               onClick={() => {
-                window.open('https://authereum.com/login')
+                window.open('https://authereum.com')
               }}
             >
               show Authereum
