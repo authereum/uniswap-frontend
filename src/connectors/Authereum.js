@@ -17,7 +17,7 @@ export class AuthereumConnector extends AbstractConnector {
       const networkName = chainIdToNetwork[this.chainId]
       this.authereum = new Authereum({
         networkName,
-        rpcUri: `https://${networkName || 'mainnet'}.infura.io/v3/3b91c9f8f08f4087b2cd095b2b5a0a58`
+        rpcUri: `https://eth-mainnet.alchemyapi.io/v2/veG5_3xy6GDLbyim1YfwQ8NdG3y5RPfY`
       })
     }
 
